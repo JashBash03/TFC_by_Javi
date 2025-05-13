@@ -230,7 +230,7 @@ Los beneficios más notables al usarlo son los siguientes:
 # <a name="_toc197772633"></a>Bibliografía
 <https://www.ionos.es/digitalguide/servidores/know-how/un-vistazo-a-proyectos-basados-en-raspberry-pi/>
 
-[https://hardzone.es/tutoriales/componentes/proyectos-novatos-raspberry-pi/](https://hardzone.es/tutoriales/componentes/proyectos-novatos-raspberry-pi/%20) 
+<https://hardzone.es/tutoriales/componentes/proyectos-novatos-raspberry-pi/%20>
 
 <https://www.prometec.net/raspberry-pi-servidor/>
 
@@ -238,7 +238,7 @@ Los beneficios más notables al usarlo son los siguientes:
 
 <https://raspberrypi.cl/que-es-raspberry/>
 
-[https://ultra-lab.net/producto/dht11-sensor-de-humedad-y-temperatura/#:~:text=El%20sensor%20DHT11%20es%20un,Raspberry%20Pi%20o%20microcontrolador%20favorito.](https://ultra-lab.net/producto/dht11-sensor-de-humedad-y-temperatura/%23:~:text=El%20sensor%20DHT11%20es%20un,Raspberry%20Pi%20o%20microcontrolador%20favorito.)
+<https://ultra-lab.net/producto/dht11-sensor-de-humedad-y-temperatura/%23:~:text=El%20sensor%20DHT11%20es%20un,Raspberry%20Pi%20o%20microcontrolador%20favorito.>
 
 <https://programarfacil.com/blog/arduino-blog/sensor-dht11-temperatura-humedad-arduino/>
 
