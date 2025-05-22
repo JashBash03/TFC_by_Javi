@@ -1,0 +1,22 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sensor DHT11</title>
+  <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+</head>
+<body>
+  <h1>Temperatura y Humedad</h1>
+  <p>Temperatura: <span id="temp">--</span> °C</p>
+  <p>Humedad: <span id="hum">--</span> %</p>
+
+  <script>
+    const socket = io();
+
+    socket.on('sensor_data', function(data) {
+      document.getElementById('temp').textContent = data.temp;
+      document.getElementById('hum').textContent = data.hum;
+    });
+  </script>
+</body>
+</html>
