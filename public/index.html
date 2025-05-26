@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sensor DHT11 en tiempo real</title>
+</head>
+<body>
+  <h1>Lectura del Sensor DHT11</h1>
+  <div class="sensor-data">
+    <p>🌡️ Temperatura: <span id="temp">--</span> °C</p>
+    <p>💧 Humedad: <span id="hum">--</span> %</p>
+  </div>
+  <p id="error" class="error"></p>
+
+  <!-- Cliente de Socket.IO -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+
+    socket.on("datosSensor", (data) => {
+      document.getElementById("temp").textContent = data.temperatura;
+      document.getElementById("hum").textContent = data.humedad;
+    });
+
+    socket.on("connect_error", () => {
+      document.getElementById("error").textContent = "Error de conexión con el servidor.";
+    });
+  </script>
+</body>
+</html>
