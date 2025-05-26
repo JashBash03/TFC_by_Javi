@@ -14,7 +14,7 @@ app.use(express.static("public"));
 
 // Leer sensor y emitir datos cada 2 segundos
 setInterval(() => {
-  sensor.read(22, 4, (err, temperature, humidity) => {
+  sensor.read(11, 4, (err, temperature, humidity) => {
     if (!err) {
       io.emit("datosSensor", {
         temperatura: temperature.toFixed(1),
